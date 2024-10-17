@@ -1,0 +1,394 @@
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar-brand {
+    font-weight: 700;
+    font-size: 28px;
+}
+
+.nav-link {
+    font-size: 16px;
+    
+}
+
+.nav-link.active {
+    font-weight: 700;
+}
+
+.button-daftar{
+    background-color: #FFA500;
+    color: white;
+    font-weight: 500;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+}
+
+.button-masuk{
+    background-color: green;
+    color: white;
+    font-weight: 500;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+}
+
+/*Section Hero */
+
+/* Hero Section */
+/* Hero Section dengan overlay */
+#hero {
+    background-image: url('../image/banner2.jpg'); /* Ganti dengan jalur gambar Anda */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+#hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Overlay hitam dengan opacity 50% */
+    z-index: 1;
+}
+
+/* Pastikan teks dan konten berada di atas overlay */
+#hero .container {
+    position: relative;
+    z-index: 2;
+}
+
+/* Styling teks dan button */
+#hero h1 {
+    margin-bottom: 20px;
+    font-weight: 700;
+    white-space: nowrap; /* Mencegah teks turun ke baris baru */
+    font-size: 35px;   /* Ukuran font yang sesuai */
+}
+
+#hero p{
+    color: white;
+}
+
+
+.button-readmore{
+   
+    background-color: white;
+    color: black;
+    font-weight: 500;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-decoration: none;
+}
+/* End Hero Section */
+
+
+/* Section About */
+#about {
+    background-color: #f0f0f0; /* Latar belakang lembut */
+    padding: 60px 0; /* Memberikan ruang atas dan bawah */
+}
+
+.title-about {
+    font-size: 2rem; /* Ukuran font yang lebih besar untuk judul utama */
+    color: #333; /* Warna teks yang kontras */
+    font-weight: bold; /* Memberikan penekanan pada judul */
+}
+
+.history-title {
+    font-size: 1.5rem; /* Ukuran font untuk judul sejarah */
+    color: #555; /* Warna teks untuk judul sejarah */
+    margin-bottom: 20px; /* Memberikan jarak bawah pada judul */
+}
+
+.history-description {
+    font-size: 1rem; /* Ukuran font untuk deskripsi sejarah */
+    color: #444; /* Warna teks untuk deskripsi */
+    line-height: 1.6; /* Tinggi baris untuk keterbacaan yang lebih baik */
+}
+
+.about-image img {
+    max-width: 100%; /* Membuat gambar responsif */
+    border-radius: 8px; /* Sudut melengkung untuk gambar */
+}
+
+.about-divider {
+    margin: 20px auto; /* Margin otomatis untuk membuat garis pemisah terpusat */
+    width: 50%; /* Mengatur lebar garis pemisah */
+    height: 2px; /* Ketebalan garis */
+    background-color: #333; /* Warna garis */
+  }
+
+/* End Section About */
+
+/* Section produk */
+
+/* Mengatur gaya umum untuk bagian produk */
+#produk {
+    padding: 40px 0; /* Menambahkan padding atas dan bawah */
+    background-color: #f8f9fa; /* Warna latar belakang yang lembut */
+  }
+  
+  .title-produk {
+    font-size: 2rem; /* Ukuran font untuk judul */
+    font-weight: bold; /* Menebalkan judul */
+  }
+  
+  .produk-divider {
+    margin: 20px auto; /* Margin otomatis untuk membuat garis pemisah terpusat */
+    width: 50%; /* Mengatur lebar garis pemisah */
+    height: 2px; /* Ketebalan garis */
+    background-color: #333; /* Warna garis */
+  }
+  
+  /* Gaya untuk kartu produk */
+  .produk-card {
+    border: 1px solid #ddd; /* Batas kartu */
+    border-radius: 8px; /* Sudut melengkung */
+    overflow: hidden; /* Menghindari konten melampaui batas */
+    text-align: center; /* Menjaga teks terpusat */
+    margin-bottom: 30px; /* Margin bawah untuk jarak antar kartu */
+    transition: transform 0.3s; /* Efek transisi saat hover */
+  }
+  
+  .produk-card:hover {
+    transform: scale(1.05); /* Membesar saat hover */
+  }
+  
+  /* Gaya untuk gambar produk */
+  .produk-image {
+    max-width: 100%; /* Memastikan gambar tidak melampaui lebar kontainer */
+    height: auto; /* Mempertahankan rasio aspek gambar */
+    max-height: 200px; /* Membatasi tinggi maksimum gambar */
+    object-fit: cover; /* Memastikan gambar terpotong dengan baik */
+    background: transparent;
+  }
+
+
+  
+  /* Gaya untuk deskripsi produk */
+  .produk-description {
+    font-size: 1rem; /* Ukuran font deskripsi */
+    color: #555; /* Warna teks yang lebih lembut */
+    margin: 10px 0; /* Margin atas dan bawah untuk jarak */
+  }
+  
+  /* Gaya untuk tombol */
+  .btn-lihat {
+    background-color: #FFA500; /* Warna latar belakang tombol */
+    border: none; /* Menghilangkan batas tombol */
+    color: white; /* Warna teks tombol */
+    padding: 5px 10px; /* Padding untuk tombol */
+    width: 100%;
+    cursor: pointer; /* Menunjukkan bahwa tombol dapat diklik */
+  }
+  
+  .btn-lihat:hover {
+    background-color: #FFA500; /* Warna tombol saat hover */
+  }
+  
+  
+  
+/* End Section produk */
+
+
+/* Section galeri */
+#galeri {
+    padding: 50px 0; /* Padding atas dan bawah */
+    background-color: #f0f0f0; /* Latar belakang lembut */
+  }
+  
+  .galeri-divider {
+    margin: 20px auto; /* Margin otomatis untuk membuat garis pemisah terpusat */
+    width: 50%; /* Mengatur lebar garis pemisah */
+    height: 2px; /* Ketebalan garis */
+    background-color: #333; /* Warna garis */
+  }
+  
+  .galeri-image {
+    border-radius: 10px; /* Sudut gambar yang membulat */
+    transition: transform 0.3s; /* Efek transisi saat hover */
+    margin-bottom: 20px;
+  }
+  
+  .galeri-image:hover {
+    transform: scale(1.05); /* Membesar gambar saat hover */
+  }
+
+  /* Gaya untuk judul galeri */
+ .galeri-title {    
+    font-size: 2rem; /* Ukuran font untuk judul */
+    font-weight: bold; /* Menebalkan judul */
+  }
+  
+
+  #event {
+    padding: 60px 0;
+    background-color: #f8f9fa; /* Warna latar belakang berbeda */
+  }
+  
+  .title-event {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  
+  .event-divider {
+    margin: 20px auto; /* Margin otomatis untuk membuat garis pemisah terpusat */
+    width: 50%; /* Mengatur lebar garis pemisah */
+    height: 2px; /* Ketebalan garis */
+    background-color: #333; /* Warna garis */
+  }
+  
+  .event-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+  }
+  
+  .event-card:hover {
+    transform: translateY(-10px); /* Efek hover pada card */
+  }
+  
+  .event-image {
+    width: 100%;
+    height: auto;
+    border-bottom: 3px solid #FFA500; /* Garis bawah pada gambar */
+  }
+  
+  .event-info {
+    padding: 15px;
+    text-align: center;
+  }
+  
+  .event-info h5 {
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .event-info p {
+    margin-bottom: 5px;
+    color: #555;
+  }
+  
+  .btn-event {
+    background-color: #ddd;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+  }
+  
+  .btn-event:hover {
+    background-color: #FFA500; /* Warna saat dihover */
+  }
+
+  /* End Section event */
+
+#klien {
+    padding: 10px 0;
+    background-color: #f0f0f0;
+}
+
+
+#contact {
+    background-color: #f9f9f9;
+    padding: 60px 0;
+  }
+  
+  .title-contact {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  
+  .contact-divider {
+    margin: 20px auto; /* Margin otomatis untuk membuat garis pemisah terpusat */
+    width: 50%; /* Mengatur lebar garis pemisah */
+    height: 2px; /* Ketebalan garis */
+    background-color: #333; /* Warna garis */
+  }
+  
+  .map-responsive {
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+    height: 0;
+  }
+  
+  .map-responsive iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+  }
+
+  .button-kirim {
+    background-color: #007bff;
+    color: white;
+    font-weight: 500;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    width: 100%;
+  }
+  
+
+  
+  .footer {
+    background-color: #343a40;
+  }
+  
+  .footer .text-uppercase {
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  
+  .footer p, .footer ul {
+    font-size: 0.9rem;
+  }
+  
+  .footer a {
+    text-decoration: none;
+    color: #ccc;
+  }
+  
+  .footer a:hover {
+    color: #fff;
+  }
+  
+  .footer .social-icons i {
+    font-size: 1.5rem;
+  }
+  
+  .footer .social-icons a {
+    color: #fff;
+    margin-right: 15px;
+    transition: color 0.3s ease;
+  }
+  
+  .footer .social-icons a:hover {
+    color: #007bff;
+  }
+  
+  .footer hr {
+    border-color: #666;
+    margin: 20px 0;
+  }
+  
+  
